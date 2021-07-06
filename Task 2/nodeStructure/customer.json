@@ -1,0 +1,37 @@
+[{
+    "userId":"rahul",
+    "jobTitleName":"Developer",
+    "firstName":"Rahul",
+    "lastName":"Reddy",
+    "department":"CSE",
+    "phoneNumber":"91-1234567",
+    "emailAddress":"rahulreddy@gmail.com"
+    },
+    {
+    "userId":"Tom",
+    "jobTitleName":"Developer",
+    "firstName":"Tom",
+    "lastName":"Holland",
+    "department":"ECE",
+    "phoneNumber":"91-1111111",
+    "emailAddress":"tomholland@gmail.com"
+    },
+    {
+    "userId":"Tony",
+    "jobTitleName":"Program Directory",
+    "firstName":"Tony",
+    "lastName":"Stark",
+    "department":"CSE",
+    "phoneNumber":"91-2222222",
+    "emailAddress":"tonystark@gmail.com"
+    },
+    {
+    "userId":"agent",
+    "jobTitleName":"Software Engineer",
+    "firstName":"agent",
+    "lastName":"A",
+    "department":"Mech",
+    "phoneNumber":"91-2222222",
+    "emailAddress":"agent@gmail.com"
+    }
+]

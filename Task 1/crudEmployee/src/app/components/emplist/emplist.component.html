@@ -1,0 +1,46 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">   
+      <div>
+        <h2 style="text-align: center;">Employee List</h2>
+        <button (click)="addEmployee()" class="btn btn-success" style="margin-left:70%;">Add Employee</button>
+      </div>
+      <div class="input-group" style="width: 50%;">
+        <input type="search" (ngModelChange)="searchProducts(key.value)" #key="ngModel" ngModel
+        class="form-control rounded" placeholder="Search for Employees By Name..." aria-label="Search"
+        aria-describedby="search-addon" />
+        <button type="button" (click)="searchProducts(key.value)" class="btn btn-outline-primary"><a class="fa fa-search"></a></button> 
+      </div>
+      
+      
+      <br>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Employee Id</th>
+            <th>Employee name</th>
+            <th>Actions</th>
+            <th><mat-checkbox [checked]="allComplete"
+              [indeterminate]="someComplete()"
+              (change)="setAll($event.checked)"></mat-checkbox>  Select All</th>
+            <th><button type="button" (click)="download()"><a class="fa fa-download"></a></button></th>
+            
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.employeeName}}</td>
+            <td><button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+                <button  (click)="updateEmployee(employee.id)" class="btn btn-info" style="margin-left: 10px">Update</button>    
+            </td>
+            <td><mat-checkbox [(ngModel)]="employee.completed"
+              (ngModelChange)="updateAllComplete()"></mat-checkbox></td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

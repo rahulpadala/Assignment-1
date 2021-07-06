@@ -1,0 +1,30 @@
+package com.file.model;
+
+public class filePaths {
+	
+	private String sourcePath;
+	private String destinationPath;
+	public String getSourcePath() {
+		return sourcePath;
+	}
+	public void setSourcePath(String sourcePath) {
+		this.sourcePath = sourcePath;
+	}
+	public String getDestinationPath() {
+		return destinationPath;
+	}
+	public void setDestinationPath(String destinationPath) {
+		this.destinationPath = destinationPath;
+	}
+	public filePaths(String sourcePath, String destinationPath) {
+		super();
+		this.sourcePath = sourcePath;
+		this.destinationPath = destinationPath;
+	}
+	public filePaths() {
+	
+	}
+	
+	
+
+}

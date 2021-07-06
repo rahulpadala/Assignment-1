@@ -1,0 +1,22 @@
+package com.file.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.file.Service.fileService;
+
+@RestController
+public class fileResource {
+	
+	@Autowired
+	private fileService service;
+	
+	@RequestMapping(value = "/addEmployee", method = RequestMethod.POST )
+	public void addEmployee(@RequestBody String sourcePath,@RequestBody String destinationPath) {
+		service.fileSafeTransfer(sourcePath,destinationPath);
+	}
+	
+}

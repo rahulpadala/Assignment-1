@@ -1,0 +1,44 @@
+package com.file.model;
+
+import java.nio.file.Path;
+
+public class filePaths {
+	
+	private String fileName;
+	private Path sourcePath;
+	private Path destinationPath;
+	
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	public Path getSourcePath() {
+		return sourcePath;
+	}
+	public void setSourcePath(Path sourcePath) {
+		this.sourcePath = sourcePath;
+	}
+	public Path getDestinationPath() {
+		return destinationPath;
+	}
+	public void setDestinationPath(Path destinationPath) {
+		this.destinationPath = destinationPath;
+	}
+	
+	
+	public filePaths(String fileName, Path sourcePath, Path destinationPath) {
+		super();
+		this.fileName = fileName;
+		this.sourcePath = sourcePath;
+		this.destinationPath = destinationPath;
+	}
+	
+	public filePaths() {
+	
+	}
+	
+	
+
+}
